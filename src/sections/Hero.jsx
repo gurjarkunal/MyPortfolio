@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
-import { ArrowRight, Download, ChevronDown} from "lucide-react";
+import { ArrowRight, Download, ChevronDown } from "lucide-react";
 
 const skills = [
   // Mobile Development
@@ -70,7 +70,7 @@ const skills = [
   // Languages
   "Java",
   "C",
-  "SQL"
+  "SQL",
 ];
 
 const GitHubIcon = (props) => (
@@ -146,8 +146,11 @@ const Hero = () => {
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Kunal Gurjar — a software engineer specializing in
-                Flutter, Dart, Next.js, and JavaScript. I build scalable,
-                performant applications that users love.
+                Flutter Developer || iOS & Android || Flutter & Dart || REST
+                APIs || Provider & GetX || CI/CD || Cross-Platform Applications
+                || Node || Express || Java (Intermediate) || DSA || Problem
+                Solving. I build scalable, performant applications that users
+                love.
               </p>
             </div>
 
@@ -229,7 +232,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
         </div>
         {/* Skills Section */}
         <div className="mt-20 animate-fade-in animation-delay-600">
