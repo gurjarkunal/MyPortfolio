@@ -1,5 +1,5 @@
-import React from 'react'
-import { ArrowUpRight} from "lucide-react";
+import React from "react";
+import { ArrowUpRight } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 const GitHubIcon = (props) => (
@@ -10,39 +10,63 @@ const GitHubIcon = (props) => (
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "DriProFit App",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
+      "Developed a multilingual gym coaching app that supports English, French, and Arabic. Implemented weekly exercise plans with detailed descriptions, reference images, and instructional videos. Worked on API integrations to fetch exercise data and manage user progress efficiently.",
+    image: "/projects/driprofit.png",
+    tags: ["Flutter", "Dart", "NodeJS", "RestAPIs", "Subscription"],
+    link: "https://play.google.com/store/apps/details?id=com.app.dryfit&pcampaignid=web_share",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Bookmyglam App",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
+      "Developed a dual-app platform with separate Customer and Beautician applications. Built a location-based beauty and wellness service booking platform, enabling users to discover and book nearby salons, spas, massage therapists, and beauty professionals. Implemented appointment scheduling with support for selecting services, preferred date, time, and service provider. Consumed REST APIs for authentication, booking management, payment processing, and service listings.",
+    image: "/projects/bookmyglam.png",
+    tags: [
+      "Flutter",
+      "Dart",
+      "NodeJS",
+      "RestAPIs",
+      "RazorPay",
+      "Google Maps/Location Services",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.app.salondealpecustomer&pcampaignid=web_share",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Whielo App",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
+      "Implemented an end-to-end vehicle service booking system, allowing users to schedule various car maintenance and repair services. Built a real-time service tracking workflow, enabling customers to monitor every stage of their vehicle’s service Integrated secure online payment functionality for seamless service transactions. Integrated 1-to-1 real-time chat using Firebase Cloud Firestore + Realtime Database for seamless messaging.",
+    image: "/projects/whielo.png",
+    tags: [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "RestAPI",
+      "RazorPay",
+      "Firebase",
+      "Nodejs",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.app.automotiveService&pcampaignid=web_share",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Salem Assist App",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
+      "Developed a roadside assistance platform consisting of two Flutter applications: Customer App and Driver App. Built the Customer App with four emergency roadside services: Fuel Delivery, Battery Assistance, Tyre Service, and Towing Service. Implemented real-time service request creation, allowing customers to request assistance for their registered vehicles. Developed a vehicle management module where users can add and manage multiple vehicles for quick service requests. Integrated real-time order tracking with status updates including Pending, Ongoing, Completed, and Cancelled. Built the Driver App to receive and manage incoming service requests from customers. Implemented a custom notification ringtone that continuously rings until the driver accepts or rejects a service request, ensuring timely response to emergencies. Enabled drivers to accept, reject, and update service requests while providing real-time status synchronization between both applications. Integrated location services to support efficient service dispatching and customer tracking.",
+    image: "/projects/salemassist.png",
+    tags: [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "RestAPI",
+      "RazorPay",
+      "Firebase",
+      "FCM",
+      "Nodejs",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.app.salemassist&pcampaignid=web_share",
     github: "#",
   },
 ];
@@ -95,6 +119,7 @@ const Projects = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
@@ -140,15 +165,15 @@ const Projects = () => {
         </div>
 
         {/* View All CTA */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
             View All Projects
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
-        </div>
+        </div> */}
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
