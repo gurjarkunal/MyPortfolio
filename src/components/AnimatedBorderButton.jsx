@@ -1,6 +1,7 @@
-const AnimatedBorderButton = ({ children }) => {
+const AnimatedBorderButton = ({ children, as: Component = "button", ...props }) => {
   return (
-    <button
+    <Component
+      {...props}
       className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
@@ -31,7 +32,7 @@ const AnimatedBorderButton = ({ children }) => {
       <span className="relative z-10 flex items-center justify-center gap-2">
         {children}
       </span>
-    </button>
+    </Component>
   );
 };
 

@@ -89,6 +89,7 @@ const Hero = () => {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
+  const cvFileName = "Kunal_Gurjar_CV.pdf";
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -155,7 +156,11 @@ const Hero = () => {
               <Button size="lg" onClick={scrollToContact}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton
+                as="a"
+                href={`/${cvFileName}`}
+                download={cvFileName}
+              >
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
