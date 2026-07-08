@@ -123,7 +123,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-14 pt-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
@@ -144,8 +144,8 @@ const Hero = () => {
                   precision.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Kunal Gurjar — a software engineer specializing in
+              <p className="text-lg text-white max-w-lg animate-fade-in animation-delay-200">
+                <span className="text-white glow-text text-2xl md:text-3xl lg:text-4xl">Hi, I'm <span className="text-primary font-bold glow-text text-2xl md:text-3xl lg:text-4xl">Kunal Gurjar</span></span> — a software engineer specializing in
                 Flutter Developer || iOS & Android || Flutter & Dart || REST
                 APIs || Provider & GetX || CI/CD || Cross-Platform Applications
                 || Node || Express || Java (Intermediate) || DSA || Problem
